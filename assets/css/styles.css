@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Stone 300 */
+html { background-color: #d6d3d1; }
+
+p + p { margin-top: 1.25rem; }
+
+/* Sky 900 */
+a { color: #0c4a6e; }
+
+/* Sky 500 */
+a:focus, a:hover { color: #0ea5e9; }
+
+nav a { color: inherit; }
+
+#images li:hover,
+#images li:focus,
+#new-work li:hover,
+#new-work li:focus,
+#links li:hover,
+#links li:focus {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}

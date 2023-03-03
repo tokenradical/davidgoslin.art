@@ -1,0 +1,41 @@
+{% comment %}
+**
+NAVIGATION PLUGIN
+https://www.11ty.dev/docs/plugins/navigation/#bring-your-own-html-render-the-menu-items-manually
+
+This longform makes it easier to add TailwindCSS classes
+**
+{% endcomment %}
+
+{% assign navPages = collections.all | eleventyNavigation %}
+
+<nav class="bg-stone-200">
+    <ul class="flex justify-center flex-wrap">
+        {%- for entry in navPages %}
+        <li class="
+            font-narrow
+            text-lg
+            uppercase
+            tracking-wider
+            {% if entry.url == page.url %}active{% endif %}
+            ">
+            {%- if entry.url == page.url -%}<span {%- endif -%}
+            {%- if entry.url != page.url -%}<a {%- endif %}
+                class="
+                    block
+                    p-4
+                    {% if entry.url == page.url %}
+                        underline decoration-dotted underline-offset-4 decoration-1
+                    {% endif %}
+                    {% if entry.url != page.url %}
+                        hover:bg-stone-50
+                    {% endif %}
+                    "
+                {%- if entry.url != page.url -%}href="{{ entry.url }}"{%- endif -%}
+                >{{ entry.title }}
+                {%- if entry.url != page.url -%}</a>{%- endif -%}
+                {%- if entry.url == page.url -%}</span>{%- endif -%}
+        </li>
+        {%- endfor %}
+    </ul>
+</nav>

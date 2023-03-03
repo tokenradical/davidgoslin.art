@@ -1,0 +1,202 @@
+{
+    "work" : [
+        {   "title"  : "#64",
+            "width"  : "42",
+            "height" : "72",
+            "year"   : "1982",
+            "note" : "Pew Charitable Trusts",
+            "file"   : "david-goslin-64-42x72-1982.jpg"
+            },
+        {   "title"  : "#87",
+            "width"  : "56",
+            "height" : "40",
+            "year"   : "1985",
+            "note" : "Acrylic on canvas",
+            "file"   : "david-goslin-87-56x40-1985.jpg"
+            },
+        {   "title"  : "#92",
+            "width"  : "31",
+            "height" : "45",
+            "year"   : "1986",
+            "note" : "Acrylic on canvas",
+            "file"   : "david-goslin-92-31x45-1986.jpg"
+            },
+        {   "title"  : "#98",
+            "width"  : "49",
+            "height" : "40",
+            "year"   : "1988",
+            "note" : "Acrylic on canvas",
+            "file"   : "david-goslin-98-49x40-1988.jpg"
+            },
+        {   "title"  : "#103",
+            "width"  : "91",
+            "height" : "60",
+            "year"   : "2005",
+            "note" : "Acrylic on canvas",
+            "file"   : "david-goslin-103-91x60-2005.jpg"
+            },
+        {   "title"  : "#104a",
+            "width"  : "33",
+            "height" : "47",
+            "year"   : "2006",
+            "note" : "Acrylic on canvas",
+            "file"   : "david-goslin-104a-33x47-2006.jpg"
+            },
+        {   "title"  : "#106",
+            "width"  : "39",
+            "height" : "44",
+            "year"   : "2008",
+            "note" : "Acrylic on canvas",
+            "file"   : "david-goslin-106-39x44-2008.jpg"
+            },
+        {   "title"  : "#107",
+            "width"  : "52",
+            "height" : "46",
+            "year"   : "2007",
+            "file"   : "david-goslin-107-52x46-2007.jpg"
+            },
+        {   "title"  : "#108",
+            "width"  : "34",
+            "height" : "42",
+            "year"   : "2008",
+            "file"   : "david-goslin-108-34x42-2008.jpg"
+            },
+        {   "title"  : "#109",
+            "width"  : "46",
+            "height" : "40",
+            "year"   : "2008",
+            "file"   : "david-goslin-109-46x40-2008.jpg"
+            },
+        {   "title"  : "#111",
+            "width"  : "36",
+            "height" : "40",
+            "year"   : "2008",
+            "file"   : "david-goslin-111-36x40-2008.jpg"
+            },
+        {   "title"  : "#115",
+            "width"  : "50",
+            "height" : "32",
+            "year"   : "2008",
+            "file"   : "david-goslin-115-50x32-2008.jpg"
+            },
+        {   "title"  : "#117",
+            "width"  : "62",
+            "height" : "16",
+            "year"   : "2009",
+            "file"   : "david-goslin-117-62x16-2009.jpg"
+            },
+        {   "title"  : "#119",
+            "width"  : "43",
+            "height" : "34",
+            "year"   : "2009",
+            "file"   : "david-goslin-119-43x34-2009.jpg"
+            },
+        {   "title"  : "#120",
+            "width"  : "52",
+            "height" : "26",
+            "year"   : "2009",
+            "file"   : "david-goslin-120-52x26-2009.jpg"
+            },
+        {   "title"  : "#121",
+            "width"  : "50",
+            "height" : "58",
+            "year"   : "2009",
+            "file"   : "david-goslin-121-50x58-2009.jpg"
+            },
+        {   "title"  : "#122",
+            "width"  : "36",
+            "height" : "53",
+            "year"   : "2009",
+            "file"   : "david-goslin-122-36x53-2009.jpg"
+            },
+        {   "title"  : "#124",
+            "width"  : "34",
+            "height" : "34",
+            "year"   : "2009",
+            "file"   : "david-goslin-124-34x34-2009.jpg"
+            },
+        {   "title"  : "#125",
+            "width"  : "39",
+            "height" : "50",
+            "year"   : "2009",
+            "file"   : "david-goslin-125-39x50-2009.jpg"
+            },
+        {   "title"  : "#126",
+            "width"  : "34",
+            "height" : "36",
+            "year"   : "2009",
+            "file"   : "david-goslin-126-34x36-2009.jpg"
+            },
+        {   "title"  : "#127",
+            "width"  : "34",
+            "height" : "34",
+            "year"   : "2009",
+            "file"   : "david-goslin-127-34x34-2009.jpg"
+            },
+        {   "title"  : "#128",
+            "width"  : "36",
+            "height" : "50",
+            "year"   : "2009",
+            "file"   : "david-goslin-128-36x50-2009.jpg"
+            },
+        {   "title"  : "#130",
+            "width"  : "42",
+            "height" : "34",
+            "year"   : "2009",
+            "file"   : "david-goslin-130-42x34-2009.jpg"
+            },
+        {   "title"  : "#131a",
+            "width"  : "20",
+            "height" : "16",
+            "year"   : "2009",
+            "file"   : "david-goslin-131a-20x16-2009.jpg"
+            },
+        {   "title"  : "#131b",
+            "width"  : "20",
+            "height" : "16",
+            "year"   : "2009",
+            "file"   : "david-goslin-131b-20x16-2009.jpg"
+            },
+        {   "title"  : "#131c",
+            "width"  : "20",
+            "height" : "16",
+            "year"   : "2009",
+            "file"   : "david-goslin-131c-20x16-2009.jpg"
+            },
+        {   "title"  : "#131d",
+            "width"  : "20",
+            "height" : "16",
+            "year"   : "2009",
+            "file"   : "david-goslin-131d-20x16-2009.jpg"
+            }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

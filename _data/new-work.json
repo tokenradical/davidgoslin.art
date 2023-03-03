@@ -1,0 +1,212 @@
+{
+    "work" :  [
+        {   "title"  : "#139",
+            "width"  : "36",
+            "height" : "36",
+            "year"   : "2010",
+            "file"   : "david-goslin-139-36x36-2010.jpg"
+            },
+        {   "title"  : "#140",
+            "width"  : "42",
+            "height" : "34",
+            "year"   : "2010",
+            "file"   : "david-goslin-140-42x34-2010.jpg"
+            },
+        {   "title"  : "#141",
+            "width"  : "44",
+            "height" : "36",
+            "year"   : "2010",
+            "file"   : "david-goslin-141-44x36-2010.jpg"
+            },
+        {   "title"  : "#142",
+            "width"  : "36",
+            "height" : "44",
+            "year"   : "2010",
+            "note"   : "Acrylic on canvas",
+            "file"   : "david-goslin-142-36x44-2010.jpg"
+            },
+        {   "title"  : "#143",
+            "width"  : "46",
+            "height" : "39",
+            "year"   : "2010",
+            "file"   : "david-goslin-143-46x39-2010.jpg"
+            },
+        {   "title"  : "#144",
+            "width"  : "36",
+            "height" : "40",
+            "year"   : "2010",
+            "file"   : "david-goslin-144-36x40-2010.jpg"
+            },
+        {   "title"  : "#145",
+            "width"  : "50",
+            "height" : "46",
+            "year"   : "2011",
+            "note"   : "Acrylic on canvas",
+            "file"   : "david-goslin-145-50x46-2011.jpg"
+            },
+        {   "title"  : "#146 (Spring 1)",
+            "width"  : "28",
+            "height" : "32",
+            "year"   : "2011",
+            "file"   : "david-goslin-146-28x32-2011.jpg"
+            },
+        {   "title"  : "#147",
+            "width"  : "31",
+            "height" : "40",
+            "year"   : "2011",
+            "file"   : "david-goslin-147-31x40-2011.jpg"
+            },
+        {   "title"  : "#148 (Skyscape 5)",
+            "width"  : "48",
+            "height" : "56",
+            "year"   : "2011",
+            "file"   : "david-goslin-148-48x56-2011.jpg"
+            },
+        {   "title"  : "#149",
+            "width"  : "54",
+            "height" : "40",
+            "year"   : "2011",
+            "file"   : "david-goslin-149-54x40-2011.jpg"
+            },
+        {   "title"  : "#150 (Spring 2)",
+            "width"  : "38",
+            "height" : "40",
+            "year"   : "2011",
+            "file"   : "david-goslin-150-38x40-2011.jpg"
+            },
+        {   "title"  : "#152",
+            "width"  : "36",
+            "height" : "40",
+            "year"   : "2012",
+            "file"   : "david-goslin-152-36x40-2012.jpg"
+            },
+        {   "title"  : "#153",
+            "width"  : "34",
+            "height" : "36",
+            "year"   : "2012",
+            "file"   : "david-goslin-153-34x36-2012.jpg"
+            },
+        {   "title"  : "#154",
+            "width"  : "30",
+            "height" : "35",
+            "year"   : "2012",
+            "file"   : "david-goslin-154-30x35-2012.jpg"
+            },
+        {   "title"  : "#155a",
+            "width"  : "20",
+            "height" : "20",
+            "year"   : "2013",
+            "file"   : "david-goslin-155a-20x20-2013.jpg"
+            },
+        {   "title"  : "#155b",
+            "width"  : "20",
+            "height" : "20",
+            "year"   : "2013",
+            "file"   : "david-goslin-155b-20x20-2013.jpg"
+            },
+        {   "title"  : "#155c",
+            "width"  : "20",
+            "height" : "20",
+            "year"   : "2013",
+            "file"   : "david-goslin-155c-20x20-2013.jpg"
+            },
+        {   "title"  : "#155d",
+            "width"  : "20",
+            "height" : "20",
+            "year"   : "2013",
+            "file"   : "david-goslin-155d-20x20-2013.jpg"
+            },
+        {   "title"  : "#155e",
+            "width"  : "20",
+            "height" : "20",
+            "year"   : "2013",
+            "file"   : "david-goslin-155e-20x20-2013.jpg"
+            },
+        {   "title"  : "#156",
+            "width"  : "34",
+            "height" : "20",
+            "year"   : "2013",
+            "file"   : "david-goslin-156-34x20-2013.jpg"
+            },
+        {   "title"  : "#157",
+            "width"  : "38",
+            "height" : "42",
+            "year"   : "2013",
+            "file"   : "david-goslin-157-38x42-2013.jpg"
+            },
+        {   "title"  : "#158",
+            "width"  : "40",
+            "height" : "42",
+            "year"   : "2013",
+            "file"   : "david-goslin-158-40x42-2013.jpg"
+            },
+        {   "title"  : "#159",
+            "width"  : "36",
+            "height" : "36",
+            "year"   : "2013",
+            "file"   : "david-goslin-159-36x36-2013.jpg"
+            },
+        {   "title"  : "#161",
+            "width"  : "30",
+            "height" : "32",
+            "year"   : "2014",
+            "file"   : "david-goslin-161-30x32-2014.jpg"
+            },
+        {   "title"  : "#166",
+            "width"  : "60",
+            "height" : "46",
+            "year"   : "2014",
+            "file"   : "david-goslin-166-60x46-2014.jpg"
+            },
+        {   "title"  : "#168",
+            "width"  : "38",
+            "height" : "46",
+            "year"   : "2014",
+            "file"   : "david-goslin-168-38x46-2014.jpg"
+            },
+        {   "title"  : "#169",
+            "width"  : "38",
+            "height" : "42",
+            "year"   : "2014",
+            "file"   : "david-goslin-169-38x42-2014.jpg"
+            },
+        {   "title"  : "#170 (Savannah Sunset)",
+            "width"  : "36",
+            "height" : "42",
+            "year"   : "2017",
+            "file"   : "david-goslin-170-36x42-2017.jpg"
+            }
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

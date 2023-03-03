@@ -1,0 +1,62 @@
+---
+layout: page.liquid
+title: New Color Paintings, 2010&thinsp;–&thinsp;2017
+description: David Goslin
+eleventyNavigation:
+  key: New Work
+  order: 3
+---
+
+<div x-data="{
+    lightbox: false,
+    imgModalSrc : '',
+    imgModalAlt : '',
+    imgModalDesc : ''
+    }"
+    >
+
+    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
+        {% for image in new-work.work %}
+        <li class="bg-stone-200 p-4  cursor-pointer">
+            <div @click="$dispatch(
+                'lightbox', {
+                    imgModalSrc: '/img/new-work/{{ image.file }}',
+                    imgModalAlt: 'David Goslin {{ image.title }} {{ image.width }}x{{ image.height }}, {{ image.year }}'
+                    }
+                )">
+                <figure>
+                    <img
+                        src="/img/new-work/{{ image.file }}"
+                        alt="David Goslin {{ image.title }} {{ image.width }}x{{ image.height }}, {{ image.year }}"
+                        width="{{ image.width }}"
+                        height="{{ image.height }}"
+                        class="
+                            object-cover
+                            aspect-square
+                            w-full
+                            h-full
+                            mx-auto
+                            "
+                        >
+                    <figcaption class="text-center text-sm pt-2">
+                        {{ image.title }}
+                        <div class="text-xs">{{ image.width }}x{{ image.height }}, {{ image.year }}
+                        {%- if image.note -%}
+                            <span>. {{ image.note }}</span>
+                        {% endif %}
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <div x-show="lightbox" @lightbox.window="lightbox = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;">
+        <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="fixed inset-0 z-50 flex items-center justify-center w-full p-2 overflow-hidden bg-black bg-opacity-75 h-100">
+            <div @click.away="lightbox = ''" class="">
+                <img class="" :src="imgModalSrc" :alt="imgModalAlt">
+            </div>
+        </div>
+    </div>
+</div>

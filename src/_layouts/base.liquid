@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ title }}</title>
+        <meta charset="UTF-8"/>
+        {% comment %} {% if description %}
+            <meta name="description" content="{{description}}"/>
+        {% endif %} {% endcomment %}
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+        <meta name="generator" content="Eleventy" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=BenchNine&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{{ hash['/css/styles.css'] | url }}"/>
+
+        <script defer src="{{ hash['/js/scripts.js'] | url }}"></script>
+    </head>
+    <body class="antialiased">
+        <header class="container mx-auto">
+            {% include 'nav' %}
+        </header>
+        <main class="container mx-auto">
+            {{ content }}
+        </main>
+        <footer class="container mx-auto text-center pt-24 pb-12">
+            <small>©2023 David Goslin</small>
+        </footer>
+    </body>
+</html>
