@@ -1,998 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Images</title>
-        <meta charset="UTF-8"/>
-        
-        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
-        <meta name="generator" content="Eleventy" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=BenchNine&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="/css/styles.css"/>
-
-        <script defer src="/js/scripts.js"></script>
-    </head>
-    <body class="antialiased">
-        <header class="container mx-auto">
-            
-
-
-
-<nav class="bg-stone-200">
-    <ul class="flex justify-center flex-wrap">
-        <li class="
-            font-narrow
-            text-lg
-            uppercase
-            tracking-wider
-            
-            "><a
-                class="
-                    block
-                    p-4
-                    
-                    
-                        hover:bg-stone-50
-                    
-                    "href="/">Home</a></li>
-        <li class="
-            font-narrow
-            text-lg
-            uppercase
-            tracking-wider
-            active
-            "><span
-                class="
-                    block
-                    p-4
-                    
-                        underline decoration-dotted underline-offset-4 decoration-1
-                    
-                    
-                    ">Images</span></li>
-        <li class="
-            font-narrow
-            text-lg
-            uppercase
-            tracking-wider
-            
-            "><a
-                class="
-                    block
-                    p-4
-                    
-                    
-                        hover:bg-stone-50
-                    
-                    "href="/new-work/">New Work</a></li>
-        <li class="
-            font-narrow
-            text-lg
-            uppercase
-            tracking-wider
-            
-            "><a
-                class="
-                    block
-                    p-4
-                    
-                    
-                        hover:bg-stone-50
-                    
-                    "href="/exhibitions/">Exhibitions</a></li>
-        <li class="
-            font-narrow
-            text-lg
-            uppercase
-            tracking-wider
-            
-            "><a
-                class="
-                    block
-                    p-4
-                    
-                    
-                        hover:bg-stone-50
-                    
-                    "href="/reviews/">Reviews</a></li>
-        <li class="
-            font-narrow
-            text-lg
-            uppercase
-            tracking-wider
-            
-            "><a
-                class="
-                    block
-                    p-4
-                    
-                    
-                        hover:bg-stone-50
-                    
-                    "href="/bio/">Bio</a></li>
-        <li class="
-            font-narrow
-            text-lg
-            uppercase
-            tracking-wider
-            
-            "><a
-                class="
-                    block
-                    p-4
-                    
-                    
-                        hover:bg-stone-50
-                    
-                    "href="/contact/">Contact</a></li>
-        <li class="
-            font-narrow
-            text-lg
-            uppercase
-            tracking-wider
-            
-            "><a
-                class="
-                    block
-                    p-4
-                    
-                    
-                        hover:bg-stone-50
-                    
-                    "href="/links/">Links</a></li>
-    </ul>
-</nav>
-        </header>
-        <main class="container mx-auto">
-            
-<article id="images">
-    <h1 class="font-bold leading-4 py-3 px-4 mb-8 bg-stone-400">Images</h1>
-    
-<div x-data="{
+<!doctype html><html lang="en"><head><title>Images</title><meta charset="UTF-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"><meta name="generator" content="Eleventy"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=BenchNine&display=swap" rel="stylesheet"><link rel="stylesheet" href="/css/styles.76b8feb140e508f.css"><script defer="defer" src="/js/scripts.50a07b16377c77a.js"></script></head><body class="antialiased"><header class="container mx-auto"><nav class="bg-stone-200"><ul class="flex justify-center flex-wrap"><li class="font-narrow text-lg uppercase tracking-wider"><a class="block p-4 hover:bg-stone-50" href="/">Home</a></li><li class="font-narrow text-lg uppercase tracking-wider active"><span class="block p-4 underline decoration-dotted underline-offset-4 decoration-1">Images</span></li><li class="font-narrow text-lg uppercase tracking-wider"><a class="block p-4 hover:bg-stone-50" href="/new-work/">New Work</a></li><li class="font-narrow text-lg uppercase tracking-wider"><a class="block p-4 hover:bg-stone-50" href="/exhibitions/">Exhibitions</a></li><li class="font-narrow text-lg uppercase tracking-wider"><a class="block p-4 hover:bg-stone-50" href="/reviews/">Reviews</a></li><li class="font-narrow text-lg uppercase tracking-wider"><a class="block p-4 hover:bg-stone-50" href="/bio/">Bio</a></li><li class="font-narrow text-lg uppercase tracking-wider"><a class="block p-4 hover:bg-stone-50" href="/contact/">Contact</a></li><li class="font-narrow text-lg uppercase tracking-wider"><a class="block p-4 hover:bg-stone-50" href="/links/">Links</a></li></ul></nav></header><main class="container mx-auto"><article id="images"><h1 class="font-bold leading-4 py-3 px-4 mb-8 bg-stone-400">Images</h1><div x-data="{
     lightbox: false,
     imgModalSrc : '',
     imgModalAlt : '',
     imgModalDesc : ''
-    }"
-    >
-
-    <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+    }"><ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4"><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-64-42x72-1982.jpg',
                     imgModalAlt: 'David Goslin #64 42x72, 1982'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-64-42x72-1982.jpg"
-                        alt="David Goslin #64 42x72, 1982"
-                        width="42"
-                        height="72"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #64
-                            <div class="text-xs">42x72, 1982<span>. Pew Charitable Trusts</span>
-                            
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-64-42x72-1982.jpg" alt="David Goslin #64 42x72, 1982" width="42" height="72" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#64<div class="text-xs">42x72, 1982<span>. Pew Charitable Trusts</span></div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-87-56x40-1985.jpg',
                     imgModalAlt: 'David Goslin #87 56x40, 1985'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-87-56x40-1985.jpg"
-                        alt="David Goslin #87 56x40, 1985"
-                        width="56"
-                        height="40"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #87
-                            <div class="text-xs">56x40, 1985<span>. Acrylic on canvas</span>
-                            
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-87-56x40-1985.jpg" alt="David Goslin #87 56x40, 1985" width="56" height="40" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#87<div class="text-xs">56x40, 1985<span>. Acrylic on canvas</span></div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-92-31x45-1986.jpg',
                     imgModalAlt: 'David Goslin #92 31x45, 1986'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-92-31x45-1986.jpg"
-                        alt="David Goslin #92 31x45, 1986"
-                        width="31"
-                        height="45"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #92
-                            <div class="text-xs">31x45, 1986<span>. Acrylic on canvas</span>
-                            
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-92-31x45-1986.jpg" alt="David Goslin #92 31x45, 1986" width="31" height="45" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#92<div class="text-xs">31x45, 1986<span>. Acrylic on canvas</span></div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-98-49x40-1988.jpg',
                     imgModalAlt: 'David Goslin #98 49x40, 1988'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-98-49x40-1988.jpg"
-                        alt="David Goslin #98 49x40, 1988"
-                        width="49"
-                        height="40"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #98
-                            <div class="text-xs">49x40, 1988<span>. Acrylic on canvas</span>
-                            
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-98-49x40-1988.jpg" alt="David Goslin #98 49x40, 1988" width="49" height="40" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#98<div class="text-xs">49x40, 1988<span>. Acrylic on canvas</span></div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-103-91x60-2005.jpg',
                     imgModalAlt: 'David Goslin #103 91x60, 2005'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-103-91x60-2005.jpg"
-                        alt="David Goslin #103 91x60, 2005"
-                        width="91"
-                        height="60"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #103
-                            <div class="text-xs">91x60, 2005<span>. Acrylic on canvas</span>
-                            
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-103-91x60-2005.jpg" alt="David Goslin #103 91x60, 2005" width="91" height="60" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#103<div class="text-xs">91x60, 2005<span>. Acrylic on canvas</span></div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-104a-33x47-2006.jpg',
                     imgModalAlt: 'David Goslin #104a 33x47, 2006'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-104a-33x47-2006.jpg"
-                        alt="David Goslin #104a 33x47, 2006"
-                        width="33"
-                        height="47"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #104a
-                            <div class="text-xs">33x47, 2006<span>. Acrylic on canvas</span>
-                            
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-104a-33x47-2006.jpg" alt="David Goslin #104a 33x47, 2006" width="33" height="47" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#104a<div class="text-xs">33x47, 2006<span>. Acrylic on canvas</span></div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-106-39x44-2008.jpg',
                     imgModalAlt: 'David Goslin #106 39x44, 2008'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-106-39x44-2008.jpg"
-                        alt="David Goslin #106 39x44, 2008"
-                        width="39"
-                        height="44"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #106
-                            <div class="text-xs">39x44, 2008<span>. Acrylic on canvas</span>
-                            
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-106-39x44-2008.jpg" alt="David Goslin #106 39x44, 2008" width="39" height="44" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#106<div class="text-xs">39x44, 2008<span>. Acrylic on canvas</span></div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-107-52x46-2007.jpg',
                     imgModalAlt: 'David Goslin #107 52x46, 2007'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-107-52x46-2007.jpg"
-                        alt="David Goslin #107 52x46, 2007"
-                        width="52"
-                        height="46"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #107
-                            <div class="text-xs">52x46, 2007
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-107-52x46-2007.jpg" alt="David Goslin #107 52x46, 2007" width="52" height="46" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#107<div class="text-xs">52x46, 2007</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-108-34x42-2008.jpg',
                     imgModalAlt: 'David Goslin #108 34x42, 2008'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-108-34x42-2008.jpg"
-                        alt="David Goslin #108 34x42, 2008"
-                        width="34"
-                        height="42"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #108
-                            <div class="text-xs">34x42, 2008
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-108-34x42-2008.jpg" alt="David Goslin #108 34x42, 2008" width="34" height="42" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#108<div class="text-xs">34x42, 2008</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-109-46x40-2008.jpg',
                     imgModalAlt: 'David Goslin #109 46x40, 2008'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-109-46x40-2008.jpg"
-                        alt="David Goslin #109 46x40, 2008"
-                        width="46"
-                        height="40"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #109
-                            <div class="text-xs">46x40, 2008
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-109-46x40-2008.jpg" alt="David Goslin #109 46x40, 2008" width="46" height="40" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#109<div class="text-xs">46x40, 2008</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-111-36x40-2008.jpg',
                     imgModalAlt: 'David Goslin #111 36x40, 2008'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-111-36x40-2008.jpg"
-                        alt="David Goslin #111 36x40, 2008"
-                        width="36"
-                        height="40"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #111
-                            <div class="text-xs">36x40, 2008
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-111-36x40-2008.jpg" alt="David Goslin #111 36x40, 2008" width="36" height="40" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#111<div class="text-xs">36x40, 2008</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-115-50x32-2008.jpg',
                     imgModalAlt: 'David Goslin #115 50x32, 2008'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-115-50x32-2008.jpg"
-                        alt="David Goslin #115 50x32, 2008"
-                        width="50"
-                        height="32"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #115
-                            <div class="text-xs">50x32, 2008
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-115-50x32-2008.jpg" alt="David Goslin #115 50x32, 2008" width="50" height="32" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#115<div class="text-xs">50x32, 2008</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-117-62x16-2009.jpg',
                     imgModalAlt: 'David Goslin #117 62x16, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-117-62x16-2009.jpg"
-                        alt="David Goslin #117 62x16, 2009"
-                        width="62"
-                        height="16"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #117
-                            <div class="text-xs">62x16, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-117-62x16-2009.jpg" alt="David Goslin #117 62x16, 2009" width="62" height="16" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#117<div class="text-xs">62x16, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-119-43x34-2009.jpg',
                     imgModalAlt: 'David Goslin #119 43x34, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-119-43x34-2009.jpg"
-                        alt="David Goslin #119 43x34, 2009"
-                        width="43"
-                        height="34"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #119
-                            <div class="text-xs">43x34, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-119-43x34-2009.jpg" alt="David Goslin #119 43x34, 2009" width="43" height="34" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#119<div class="text-xs">43x34, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-120-52x26-2009.jpg',
                     imgModalAlt: 'David Goslin #120 52x26, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-120-52x26-2009.jpg"
-                        alt="David Goslin #120 52x26, 2009"
-                        width="52"
-                        height="26"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #120
-                            <div class="text-xs">52x26, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-120-52x26-2009.jpg" alt="David Goslin #120 52x26, 2009" width="52" height="26" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#120<div class="text-xs">52x26, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-121-50x58-2009.jpg',
                     imgModalAlt: 'David Goslin #121 50x58, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-121-50x58-2009.jpg"
-                        alt="David Goslin #121 50x58, 2009"
-                        width="50"
-                        height="58"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #121
-                            <div class="text-xs">50x58, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-121-50x58-2009.jpg" alt="David Goslin #121 50x58, 2009" width="50" height="58" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#121<div class="text-xs">50x58, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-122-36x53-2009.jpg',
                     imgModalAlt: 'David Goslin #122 36x53, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-122-36x53-2009.jpg"
-                        alt="David Goslin #122 36x53, 2009"
-                        width="36"
-                        height="53"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #122
-                            <div class="text-xs">36x53, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-122-36x53-2009.jpg" alt="David Goslin #122 36x53, 2009" width="36" height="53" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#122<div class="text-xs">36x53, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-124-34x34-2009.jpg',
                     imgModalAlt: 'David Goslin #124 34x34, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-124-34x34-2009.jpg"
-                        alt="David Goslin #124 34x34, 2009"
-                        width="34"
-                        height="34"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #124
-                            <div class="text-xs">34x34, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-124-34x34-2009.jpg" alt="David Goslin #124 34x34, 2009" width="34" height="34" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#124<div class="text-xs">34x34, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-125-39x50-2009.jpg',
                     imgModalAlt: 'David Goslin #125 39x50, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-125-39x50-2009.jpg"
-                        alt="David Goslin #125 39x50, 2009"
-                        width="39"
-                        height="50"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #125
-                            <div class="text-xs">39x50, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-125-39x50-2009.jpg" alt="David Goslin #125 39x50, 2009" width="39" height="50" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#125<div class="text-xs">39x50, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-126-34x36-2009.jpg',
                     imgModalAlt: 'David Goslin #126 34x36, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-126-34x36-2009.jpg"
-                        alt="David Goslin #126 34x36, 2009"
-                        width="34"
-                        height="36"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #126
-                            <div class="text-xs">34x36, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-126-34x36-2009.jpg" alt="David Goslin #126 34x36, 2009" width="34" height="36" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#126<div class="text-xs">34x36, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-127-34x34-2009.jpg',
                     imgModalAlt: 'David Goslin #127 34x34, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-127-34x34-2009.jpg"
-                        alt="David Goslin #127 34x34, 2009"
-                        width="34"
-                        height="34"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #127
-                            <div class="text-xs">34x34, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-127-34x34-2009.jpg" alt="David Goslin #127 34x34, 2009" width="34" height="34" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#127<div class="text-xs">34x34, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-128-36x50-2009.jpg',
                     imgModalAlt: 'David Goslin #128 36x50, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-128-36x50-2009.jpg"
-                        alt="David Goslin #128 36x50, 2009"
-                        width="36"
-                        height="50"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #128
-                            <div class="text-xs">36x50, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-128-36x50-2009.jpg" alt="David Goslin #128 36x50, 2009" width="36" height="50" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#128<div class="text-xs">36x50, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-130-42x34-2009.jpg',
                     imgModalAlt: 'David Goslin #130 42x34, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-130-42x34-2009.jpg"
-                        alt="David Goslin #130 42x34, 2009"
-                        width="42"
-                        height="34"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #130
-                            <div class="text-xs">42x34, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-130-42x34-2009.jpg" alt="David Goslin #130 42x34, 2009" width="42" height="34" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#130<div class="text-xs">42x34, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-131a-20x16-2009.jpg',
                     imgModalAlt: 'David Goslin #131a 20x16, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-131a-20x16-2009.jpg"
-                        alt="David Goslin #131a 20x16, 2009"
-                        width="20"
-                        height="16"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #131a
-                            <div class="text-xs">20x16, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-131a-20x16-2009.jpg" alt="David Goslin #131a 20x16, 2009" width="20" height="16" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#131a<div class="text-xs">20x16, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-131b-20x16-2009.jpg',
                     imgModalAlt: 'David Goslin #131b 20x16, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-131b-20x16-2009.jpg"
-                        alt="David Goslin #131b 20x16, 2009"
-                        width="20"
-                        height="16"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #131b
-                            <div class="text-xs">20x16, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-131b-20x16-2009.jpg" alt="David Goslin #131b 20x16, 2009" width="20" height="16" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#131b<div class="text-xs">20x16, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-131c-20x16-2009.jpg',
                     imgModalAlt: 'David Goslin #131c 20x16, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-131c-20x16-2009.jpg"
-                        alt="David Goslin #131c 20x16, 2009"
-                        width="20"
-                        height="16"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #131c
-                            <div class="text-xs">20x16, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-        <li class="bg-stone-200 p-4  cursor-pointer">
-            <div @click="$dispatch(
+                )"><figure><img src="/img/images/david-goslin-131c-20x16-2009.jpg" alt="David Goslin #131c 20x16, 2009" width="20" height="16" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#131c<div class="text-xs">20x16, 2009</div></figcaption></figure></div></li><li class="bg-stone-200 p-4 cursor-pointer"><div @click="$dispatch(
                 'lightbox', {
                     imgModalSrc: '/img/images/david-goslin-131d-20x16-2009.jpg',
                     imgModalAlt: 'David Goslin #131d 20x16, 2009'
                     }
-                )">
-                <figure>
-                    <img
-                        src="/img/images/david-goslin-131d-20x16-2009.jpg"
-                        alt="David Goslin #131d 20x16, 2009"
-                        width="20"
-                        height="16"
-                        class="
-                            object-cover
-                            aspect-square
-                            w-full
-                            h-full
-                            mx-auto
-                            "
-                        >
-                        <figcaption class="text-center text-sm pt-2">
-                            #131d
-                            <div class="text-xs">20x16, 2009
-                            </div>
-                        </figcaption>
-                </figure>
-            </div>
-        </li>
-        
-    </ul>
-
-    <div x-show="lightbox" @lightbox.window="lightbox = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;">
-        <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="fixed inset-0 z-50 flex items-center justify-center w-full p-2 overflow-hidden bg-black bg-opacity-75 h-100">
-            <div @click.away="lightbox = ''" class="">
-                <img class="" :src="imgModalSrc" :alt="imgModalAlt">
-            </div>
-        </div>
-    </div>
-</div>
-</article>
-        </main>
-        <footer class="container mx-auto text-center pt-24 pb-12">
-            <small>©2023 David Goslin</small>
-        </footer>
-    </body>
-</html>
+                )"><figure><img src="/img/images/david-goslin-131d-20x16-2009.jpg" alt="David Goslin #131d 20x16, 2009" width="20" height="16" class="object-cover aspect-square w-full h-full mx-auto"><figcaption class="text-center text-sm pt-2">#131d<div class="text-xs">20x16, 2009</div></figcaption></figure></div></li></ul><div x-show="lightbox" @lightbox.window="lightbox = true; imgModalSrc = $event.detail.imgModalSrc; imgModalDesc = $event.detail.imgModalDesc;"><div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform scale-90" x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90" class="fixed inset-0 z-50 flex items-center justify-center w-full p-2 overflow-hidden bg-black bg-opacity-75 h-100"><div @click.away="lightbox = ''" class=""><img class="" :src="imgModalSrc" :alt="imgModalAlt"></div></div></div></div></article></main><footer class="container mx-auto text-center pt-24 pb-12"><small>©2023 David Goslin</small></footer></body></html>
